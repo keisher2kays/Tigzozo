@@ -1,0 +1,1679 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "jose";
+    src: url(JosefinSans-Regular.ttf);
+}
+@font-face {
+    font-family: "instagram";
+    src: url(GreatVibes-Regular-webfont.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:900&display=swap');
+
+:root {
+  --color-primary: #002626;
+  --color-secondary: #F0F7EE;
+  --duration: 1s;
+  --nav-duration: calc(var(--duration) / 4);
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --space: 1rem;
+  --font-primary: 'Helvetica', sans-serif;
+  --font-heading: 'Merriweather', serif;
+  --font-size: 1.125rem;
+  --line-height: 1.5;
+}
+body{
+    background-color: #fff;
+    color: #000;
+}
+.dark-mode{
+    background-color: #000;
+    color: #fff;
+
+    .navigation a {
+        font-family: "jose", JosefinSans;
+        text-decoration: none;
+        color:white;
+    }
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+h1 {
+  margin-bottom: calc(var(--space) * 3);
+  font-family: var(--font-heading);
+  font-size: calc(var(--font-size) + 6vmin);
+  line-height: calc(var(--line-height) / 1.25);
+}
+
+.main-navigation-toggle {
+  position: fixed;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  
+  + label {
+    position: fixed;
+    top: calc(var(--space) * 1.5);
+    right: calc(var(--space) * 2);
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+
+.icon--menu-toggle {
+  --size: calc(1rem + 4vmin);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size);
+  height: var(--size);
+  stroke-width: 6;
+}
+
+.icon-group {
+  transform: translateX(0);
+  transition: transform var(--nav-duration) var(--ease);
+}
+
+.icon--menu {
+  stroke: var(--color-primary);
+}
+
+.icon--close {
+  stroke: var(--color-secondary);
+  transform: translateX(-100%);
+}
+
+.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform var(--nav-duration);
+  z-index: 1;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: purple;
+    transform-origin: 0 50%;
+    z-index: -1;
+  }
+  
+  ul {
+    font-size: 12vmin;
+    font-family: var(--font-heading);
+    width: 100%;
+  }
+  
+  li {
+    --border-size: 1vmin;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: var(--border-size);
+      background-color: white;
+      transform-origin: 0 50%;
+      transform: translateX(-100%) skew(15deg);
+    }
+  }
+  
+  a {
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-secondary);
+    line-height: 1;
+    text-decoration: none;
+    user-select: none;
+    padding: var(--space) calc(var(--space) * 2) calc(var(--space) + var(--border-size) / 2);
+    transform: translateY(100%);
+  }
+}
+
+.main-content {
+  margin: 6rem auto;
+  max-width: 70ch;
+  padding: 0 calc(var(--space) * 2);
+  transform: translateX(0);
+  transition: transform calc(var(--nav-duration) * 2) var(--ease);
+  
+  > * + * {
+    margin-top: calc(var(--space) * var(--line-height));
+  }
+}
+
+.main-navigation-toggle:checked {
+  ~ label .icon--menu-toggle {    
+    .icon-group {
+      transform: translateX(100%);
+    }
+  }
+  
+  ~ .main-content {
+    transform: translateX(10%);
+  }
+  
+  ~ .main-navigation {
+    transition-duration: 0s;
+    transform: translateX(0);
+    
+    &:after {
+      animation: nav-bg var(--nav-duration) var(--ease) forwards;
+    }
+    
+    li:after {
+      animation: nav-line var(--duration) var(--ease) forwards;
+    }
+    
+    a {
+      animation: link-appear calc(var(--duration) * 1.5) var(--ease) forwards;
+    }
+    
+    @for $i from 1 through 4 {
+      li:nth-child(#{$i}) {
+        &:after, a {
+          animation-delay: calc((var(--duration) / 2) * #{$i} * 0.125);
+        }
+      }
+    }
+  }
+}
+
+@keyframes nav-bg {
+  from { transform: translateX(-100%) skewX(-15deg) }
+  to { transform: translateX(0) }
+}
+
+@keyframes nav-line {
+  0%   { transform: scaleX(0); transform-origin: 0 50%; }
+  35%  { transform: scaleX(1.001); transform-origin: 0 50%; }
+  65%  { transform: scaleX(1.001); transform-origin: 100% 50%; }
+  100% { transform: scaleX(0); transform-origin: 100% 50%; }
+}
+
+@keyframes link-appear {
+  0%, 25%   { transform: translateY(100%); }
+  50%, 100% { transform: translateY(0); }
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 22px;
+
+    .link1{
+        margin-left: 546px;
+    }
+
+    .link2{
+        margin-left: -3px;
+        font-family: "jose",JosefinSans ;
+        color: purple;
+    }
+    .link3{
+        margin-right: 131px;
+    }
+
+    .logo{
+        height: 8vh;
+        margin-left: -75px;
+    }
+    
+    a{
+        font-weight: bold;
+        font-size: 20px;
+        font-family: "jose",JosefinSans ;
+        text-decoration: none;
+        color: black;
+    }
+  .dropdown{
+    margin-top: 13px;
+    height: 1vh;
+    margin-left: -12px;
+  }
+//   .moon{
+//     cursor: pointer;
+//     height: 4vh;
+//   }
+}
+
+.banner{
+    h1{
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: "jose",JosefinSans ;
+    }
+    p{
+        font-weight: 700;
+        font-family: "jose",JosefinSans ;
+    }
+ 
+    .all{
+        display: flex;
+        justify-content: space-between;
+    }
+    .pics{
+        margin-right: 98px;
+        margin-top: -20px;
+    }
+    .bride{
+        height: 70vh;
+        margin-top: 84px;
+    }
+    .couple{
+        height: 70vh;
+    }
+    .bucket{
+        height: 70vh;
+        margin-top: 84px;
+    }
+    .xul{
+        height: 70vh;
+    }
+    .wordnbuttons{
+        width: 373px;
+        margin-left: 112px;
+        margin-top: 129px;
+    }
+    .button1{
+        font-family: "jose",JosefinSans ;
+        height: 5vh;
+        width: 110px;
+        border-style: none;
+        background-color: purple;
+        color: white;
+    }
+    .button2{
+        font-family: "jose",JosefinSans ;
+        height: 5vh;
+        width: 122px;
+        border-left: solid 4px purple;
+        border-right: solid 4px purple;
+        border-top: solid 2px purple;
+        border-bottom: solid 2px purple;
+    }
+    .content{
+        margin-top: 21px;
+        .watch{
+            height: 4vh;
+        }
+    display: flex;
+}
+.content2{
+    .tick{
+        height: 4vh;
+    }
+    display: flex;
+}
+.p1{
+    color: purple;
+    font-family: "jose",JosefinSans ;
+}
+.p12{
+    font-family: "jose",JosefinSans ;
+}
+.p2{
+    font-family: "jose",JosefinSans ;
+}
+  
+}
+
+.about{
+    .p3{
+        font-family: "jose",JosefinSans ;
+    }
+    .all2{
+        display: flex;
+    }
+    .tigz{
+        font-weight: bolder;
+        font-size: 18px;
+        font-family: "jose",JosefinSans ;
+        margin-top: 120px;
+        margin-left: 160px;
+    }
+    .p2{
+        font-family: "jose",JosefinSans ;
+        margin-left: 168px;
+}
+    .tutor{
+        height: 38vh;
+        margin-top: 79px;
+    }
+    .bags{
+        margin-top: -50px;
+        height: 38vh;
+        margin-left: 172px;
+    }
+    .dancing2{
+        margin-left: 30px;
+    .dancing{
+        height: 48vh;
+    }
+}
+.button3{
+    font-family: "jose",JosefinSans ;
+    background-color: purple;
+    border-style: none;
+    color: white;
+    height: 5vh;
+    width: 110px;
+}
+.youtube{
+    height: 10vh;
+    position: absolute;
+    height: 5vh;
+    bottom: -685px;
+    border-radius: 29px;
+    left: 834px;
+    top: 850px;
+}
+
+}
+
+.services{
+   
+    
+    .all3{
+        display: flex;
+    }
+    .clk{
+        font-size: 18px;
+        font-weight: bolder;
+        font-family: "jose",JosefinSans ;
+        margin-left: 67px;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    .kule{
+        height: 84vh;
+        width: 93%;
+        margin-right: 20px;
+       
+    }
+    .events{
+        font-size: 19px;
+        font-weight: bolder;
+        font-family: "jose",JosefinSans ;
+        position: absolute;
+        bottom: -215.2%;
+        left: 18%;
+        color: white;
+    }
+    .arrow{
+        position: absolute;
+        height: 5vh;
+        bottom: -214.1%;
+        left:30.7% ;
+    }
+    .ds{
+        background-color: purple;
+        width: 38%;
+        height: 84vh;
+        margin-right: 20px;
+        color: white;
+
+        ol{
+            line-height: 3rem;
+            margin-left: 20px;
+
+           
+        li{
+            font-family: "jose",JosefinSans ;
+            font-size: 15px;
+           
+        }
+        .logos{
+            text-decoration: underline;
+        }
+        }
+    }
+    .camera{
+        height: 84vh;
+        width: 93%;
+    }
+    .h3{
+        color: white;
+        position: absolute;
+        left: 20%;
+        bottom: -213.9%;
+    }
+    .h32{
+        color: white;
+        position: absolute;
+        left: 75.1%;
+        bottom: -213.9%;
+    }
+    .ds2{
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: bolder;
+        font-family: "jose",JosefinSans ;
+        margin-left: 25px;
+    }
+    .x{
+        position: absolute;
+        bottom: -214.1%;
+        left: 62.6%;
+
+    }
+    .arrow2{
+        position: absolute;
+        bottom: -214.1%;
+        height: 5vh;
+        left: 87.3%;
+    }
+    .media{
+        font-weight: bolder;
+        font-size: 19px;
+        font-family: "jose",JosefinSans ;
+        position: absolute;
+        bottom: -215.2%;
+        left: 76%;
+        color: white;
+    }
+}
+
+.serve2{
+  
+    display: flex;
+
+   
+    .guyz{
+
+        .right{
+            position: absolute;
+            margin-left: -47px;
+            margin-top: 256px;
+            
+        }
+        margin-left: 154px;
+        margin-top: 104px;
+
+        .fatso{
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: "jose",JosefinSans ;
+        }
+        .subp4{
+            font-size: 16px;
+            font-family: "jose",JosefinSans ;
+        }
+        .p4{
+            font-size: 16px;
+            font-family: "jose",JosefinSans ;
+        }
+    }
+    .bride{
+  margin-top: 23px;
+        margin-left: 62px;
+
+
+        .right2{
+            margin-left: -47px;
+            margin-top: 255px;
+            position: absolute;
+        }
+      
+
+        .fatso2{
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "jose",JosefinSans ;
+        }
+        .subp5{
+            font-size: 16px;
+            font-family: "jose",JosefinSans ;
+        }
+        .p5{
+            font-size: 16px;
+            font-family: "jose",JosefinSans ;
+        }
+    }
+    .gentlemen{
+        height: 48vh;
+    }
+    .muroora{
+        height: 48vh;
+    }
+}
+.clients{
+    margin-bottom: -46px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "jose",JosefinSans ;
+    margin-left: 59px;
+    margin-top: 91px;
+}
+
+.asseen{
+    display: flex;
+    flex-direction: column;
+
+    .seen{
+        // font-size: 20px;
+        font-weight: bolder;
+        font-family: "jose",JosefinSans ;
+        margin-top: 115px;
+        text-align: center;
+
+        span{
+            font-weight: normal;
+            font-family: "instagram",GreatVibes;   
+        }
+    }
+    .photogrid{
+        display: flex;
+        margin-top: 37px;
+        margin-left: 200px;
+    }
+
+    .hashtag{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .r1{
+        margin-right: 11px;
+        height: 50vh;
+    }
+    .r2{
+        margin-right: 11px;
+        height: 50vh;
+        margin-top: 69px;
+    }
+    .r3{
+        margin-right: 11px;
+        height: 50vh;
+    }
+    .r4{
+        margin-right: 11px;
+        height: 50vh;
+        margin-top: 69px;
+    }
+    .r5{
+        margin-right: 11px;
+        height: 50vh;
+    }
+    .r6{
+        height: 50vh;
+        margin-top: 69px;
+    }
+    .button4{
+        font-family: "jose",JosefinSans ;
+        width: 126px;
+        padding: 7px;
+        border-style: none;
+        background-color: purple;
+        color: white;
+    }
+    .zozo{
+        font-family: "jose",JosefinSans ;
+        margin-top: 60px;
+    }
+}
+
+.footer{
+    height: 40vh;
+    margin-top: 65px;
+    background-color: purple;
+    color: white;
+
+    .all15{
+        display: flex;
+        justify-content: space-between;
+        
+       p{
+        font-family: "jose",JosefinSans ;
+       }
+       h4{
+        text-decoration: underline;
+        font-family: "jose",JosefinSans ;
+       }
+        .zizo{
+            height: 7vh;
+            margin-top: 27px;
+        }
+        .copy2{
+            font-family: "jose",JosefinSans ;
+            margin-top: 20px;
+            margin-left: 6px;
+        } 
+        .first{
+            .copy{
+                display: flex;
+                 margin-top: 4px;
+                .right{
+                    margin-top: 25px;
+                }
+            }
+        }       
+.second{
+margin-top: 27px;
+}
+.third{
+    margin-top: 27px;
+}
+.forth{
+    margin-top: 27px;
+
+    .phone{
+        display: flex;
+    }
+    .email{
+        display: flex;
+    }
+    .location{
+        display: flex;
+    }
+    .us{
+        margin-left: 10px;
+    }
+    .com{
+        margin-left: 10px;
+    }
+    .street{
+        margin-left: 10px;
+    }
+    // hr{
+    //     height: 0.3vh;
+    //     color: white;
+    //     border: solid 2px;
+    // }
+    // .line{
+    
+    //     width: 50px;
+    //     color: white;
+    //     border: solid 2px;
+    // }
+}
+    }
+}
+
+@media (max-width:575px){
+
+.icon--menu-toggle{
+    position: absolute;
+    margin-left: -61px;
+    margin-top: -4px;
+}
+.main-navigation{
+    .logo{
+        height: 7vh;
+        margin-left: 21px;
+        margin-top: -157%;
+    }
+}
+
+ .navigation{
+    display: none;
+    // display: flex;
+    // font-size: 10px;
+    // justify-content: space-between;
+
+    // .logo{
+    //     height: 5vh;
+    //     margin-left: 4px;
+    // }
+    // .link3{
+    //     margin-left: 0px;
+    // }
+    // .dropdown{
+    //     left: 232px;
+    //     position: absolute;
+    //     margin-top: 5px;
+    //     height: 6px;
+    // }
+    // .moon{
+    //     margin-right: 20px;
+    //     margin-top: -2px;
+    //     margin-left: -11px;
+    //     height: 4vh;
+    // }
+ }
+ .banner{
+    .all{
+        margin-top: 47px;
+    }
+
+    .wordnbuttons{
+        margin-left: 74px;
+    }
+    h1{
+        width: 366px;
+        margin-top: -79px;
+        margin-left: -50px;
+    }
+    p{
+        font-size: 14px;
+        margin-left: -50px;
+        width: 274px;
+    }
+    .p1{
+        margin-left: 5px;
+    }
+    .p12{
+        margin-left: 5px;
+    }
+    .bride{
+        margin-left: -363px;
+        height: 39vh;
+        margin-top: 230px;
+    }
+    .couple{
+        height: 39vh;
+        position: absolute;
+        top: 38.5%;
+        margin-left: 16px;
+    }
+    .bucket{
+        display: none;
+    }
+    .xul{
+        height: 39vh;
+        position: absolute;
+        top: 38.5%;
+        margin-left: 135px;
+    }
+    .content{
+        margin-left: 72px;
+        margin-top: 343px;
+    }
+    .content2{
+        margin-left: 72px;
+    }
+    .buttons{
+        left: 26px;
+        position: absolute;
+        margin-top: 274px;
+    }
+    .watch{
+        margin-left: -119px;
+    }
+
+    .tick{
+        margin-left: -119px;
+    }
+ }
+ .about{
+    .tigz{
+        margin-top: 43px;
+        margin-left: 32px;
+    }
+    .p2{
+        font-size: 14px;
+        width: 359px;
+        margin-left: 17px;
+    }
+    .all2{
+        flex-direction: column;
+    }
+    .bags{
+        margin-top: 14px;
+        height: 29vh;
+        margin-left: 23px;
+    }
+    .tutor{
+        height: 29vh;
+        margin-top: 13px;
+    }
+    .dancing2{
+        
+        .youtube{
+            position: absolute;
+            left: 156px;
+            top: 1225px;
+        }
+        .dancing{
+            margin-left: -8px;
+        margin-top: 5px;
+        height: 41vh;
+    }}
+    .button3{
+        margin-left: -8px;
+    }
+  
+    .p3{
+        font-size: 14px;
+        margin-left: -9px;
+        width: 359px;
+        margin-top: 12px;
+    }
+
+  
+ }
+
+ .services{
+   .clk{
+    margin-left: 28px;
+    margin-top: 47px;
+    margin-bottom: 26px;
+   }
+    
+    .all3{
+        flex-direction: column;
+
+
+
+        .makule{
+            .kule{
+            object-fit: cover;
+            margin-left: 17px;
+            height: 40vh;
+            width: 93%;
+
+        }
+        
+        .events{
+            color: white;
+            margin-top: 117px;
+            position: absolute;
+            margin-left: 73px;
+            top: 264%;
+        }
+
+        .arrow{
+            height: 5vh;
+            bottom: -185.7%;
+            left: 85,9%;
+            position: absolute;
+            margin-left: 205px;
+        }
+        
+        }
+       
+        .ds{
+            font-size: 20px;
+            margin-left: 14px;
+            width: 93%;
+            height: 40vh;
+            margin-top: 20px;
+    
+            ol{
+                line-height: 23px;
+                margin-left: -2px;
+            }
+            li{
+                font-size: 13px;
+            }
+            
+        .x{
+            left: 84.6%;
+            bottom: -228.9%;
+            position: absolute;
+        }
+        .ds2{
+            margin-top: 6px;
+        }
+        }
+     
+     .looks{
+        .camera{
+            object-fit: cover;
+            margin-left: 15px;
+            margin-top: 22px;
+            height: 40vh;
+            width: 93%;
+        }
+        .arrow2{
+            position: absolute;
+            bottom: -272.2%;
+            left: 85.1%;
+        }
+        .media{
+            color: white;
+            position: absolute;
+            bottom: -272.9%;
+            left: 40.1%;
+        }
+
+     }
+       
+     
+     
+    
+    }
+
+    
+}
+
+.clients{
+    margin-bottom: -76px;
+    margin-left: 38px;
+    margin-top: 38px;
+}
+.serve2{
+
+    flex-direction: column;
+  
+
+    .guyz{
+
+        .right{
+            margin-top: 178px;
+        }
+        .gentlemen{
+            margin-left: -134px;
+            height: 34vh;
+        }
+        .fatso{
+            margin-top: 20px;
+            margin-left: -131px;
+        }
+        .p4{ 
+            margin-left: -131px;
+            margin-top: -5px;
+        }
+        .subp4{
+            margin-left: -131px;
+    
+        }
+    
+    }
+    
+    .bride{
+      
+        margin-top: -10px;
+        margin-left: 132px;
+
+        .right2{
+            margin-top: 207px;
+        }
+        .p5{
+            margin-left: -106px;
+        }
+        .subp5{
+            margin-left: -99px;
+        }
+        .muroora{
+            height: 34vh;
+            margin-left: -108px;
+            margin-top: 28px;
+        }
+        .fatso2{
+            margin-top: 20px;
+            margin-left: -99px;
+        }
+    
+    }
+   
+}
+.asseen{
+    .seen{
+        margin-top: 61px;
+    }
+    .r1{
+        margin-left: -165px;
+        height: 30vh;
+    }
+    .r2{
+        height: 30vh;
+    }
+    .r3{
+        height: 30vh;
+    }
+    .r4{
+        display: none;
+    }
+    .r5{
+        display: none;
+    }
+    .r6{
+        display: none;
+    }
+}
+
+.footer{
+    height: 94vh;
+    .all15{
+     flex-direction: column-reverse;
+
+       
+        .first{
+            .zizo{
+                margin-left: 90px;
+            }
+            .zizo{
+                margin-left: 29px;
+            }
+            .copy{
+                margin-left: 41px;
+            }
+            .icons{
+                margin-left: 31px;
+            }
+          
+        }
+        .second{
+            margin-left: 200px;
+            margin-top: -153px;
+        }
+        .third{
+            margin-left: 30px;
+        }
+        .forth{
+            margin-left: 27px;
+            margin-top: 37px;
+        }
+        .right{
+            margin-left: -17px;
+            margin-top: 21px;
+        }
+       
+    }
+   
+}
+}
+
+
+
+@media (min-width:577px)and(max-width:768px){
+
+
+    .fa-sun:before{
+        margin-left: -103px;
+    }
+    .fa-moon::before{
+        margin-left: -103px;
+    }
+
+    .icon--menu-toggle{
+        display: none;
+    }
+    .main-navigation{
+        display: none;
+    }
+    .navigation{
+        .logo{
+            margin-left: -12px;
+            height: 5vh;
+            margin-top: -5px;
+        }
+        .link2{
+            margin-left: 37px;
+            color: purple;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .link1{
+            margin-left: 46px;
+        }
+        .link3{
+            margin-left: 38px;
+        }
+        .dropdown{
+            margin-left: 3px;
+        }
+    }
+    .banner{
+
+        .all{
+            margin-left: 27px;
+
+            .pics{
+                margin-right: 52px;
+            }
+            .bucket{
+                display: none;
+            }
+            .xul{
+                margin-top: -340px;
+                height: 28vh;
+            }
+
+            .wordnbuttons{
+                margin-top: 91px;
+                margin-left: 37px;
+            }
+            p{
+                font-size: 13px;
+            }
+            .p1{
+                margin-left: 5px;
+                margin-top: 10px;
+            }
+            .p12{
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+            .buttons{
+                width: 245px;
+            }
+            .couple{
+                margin-left: 135px;
+                margin-top: -237px;
+                height: 28vh;
+            }
+            .bride{
+                margin-left: 20px;
+                height: 28vh;
+                margin-top: 84px;
+            }
+        }
+     
+
+       
+       
+    }
+
+    .about{
+        .tigz{
+            margin-left: 49px;
+            margin-top: 60px;
+        }
+        .p2{
+            margin-top: 15px;
+            margin-left: 28px;
+            width: 299px;
+            font-size:13px ;
+        }
+        .p3{
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .bags{
+            object-fit: cover;
+            width: 89%;
+            height: 27vh;
+            margin-top: 11px;
+            margin-left: 32px;
+        }
+        .sack{
+            margin-left: -10px;
+        }
+       
+        .dancing2{
+            margin-left: 48px;
+            .dancing{
+                height: 27vh;
+            }
+        }
+        .tutor{
+            display: none;
+        }
+        .youtube{
+            height: 3vh;
+            left:539px;
+            top:699px;
+            bottom: -671px;
+            position: absolute;
+        }
+    }
+
+    .services{
+   .clk{
+    margin-left: 49px;
+    margin-top: 76px;
+    margin-bottom: 20px;
+   }
+        .all3{
+        .makule{
+            .kule{
+                width: 132%;
+                margin-left: -24px;
+                height: 39vh;
+                margin-right: 0px;
+            }
+            .events{
+                position: absolute;
+                margin-top: -192px;
+                margin-left: -44px;
+                bottom: -50%;
+            }
+            .arrow{
+                position: absolute;
+                height: 4vh;
+                bottom: -50.2%;
+                left: 27.5%;
+
+            }
+
+            
+        }
+        .ds{
+            width: 48%;
+            height: 39vh;
+            margin-left: 41px;
+            // margin-right: 20px;
+
+            .ds2{
+                font-size: 17px;
+                margin-left: 12px;
+            }
+            ol{
+                width: 200px;
+                line-height: 32px;
+                margin-left: 2px;
+            }
+            li{
+                font-size: 17px;
+            }
+            .x{
+                position: absolute;
+                bottom: -50.2%;
+                left: 62.7%;
+            }
+        }
+
+        .looks{
+            .media{
+                position: absolute;
+                margin-top: -577px;
+                margin-left: 29px;
+                bottom: -50%;
+
+            }
+            .arrow2{
+                position: absolute;
+                bottom: -50.2%;
+                height: 4vh;
+                left: 92.9%;
+            }
+            .camera{
+                height: 39vh;
+                width: 118%;
+                margin-left: -12px;
+            }
+        }
+    }
+}
+
+.clients{
+    position: absolute;
+    left: 333px;
+    margin-left: -288px;
+    margin-top: 64px;
+}
+.serve2{
+   .fatso{
+    margin-top: 14px;
+   }
+   .fatso2{
+    margin-top: 14px;
+   }
+
+    .gentlemen{
+        height: 25vh;
+    }
+    .guyz{
+       .right{
+        margin-left: -47px;
+        margin-top: 207px;
+       }
+
+        margin-left: 7px;
+        margin-top: 139px;
+    }
+    .muroora{
+        height: 25vh;
+    }
+    .bride{
+
+        .right2{
+            margin-top: 209px;
+            margin-left: -47px;
+        }
+        margin-top: 140px;
+        margin-left: 30px;
+    }
+}
+
+.asseen{
+
+    .photogrid{
+
+        margin-left: -26px;
+        .r1{
+            height: 25vh;
+        }
+        .r2{
+            height: 25vh;
+        }
+        .r3{
+            height: 25vh;
+        }
+        .r4{
+            height: 25vh;
+        }
+        .r5{
+            height: 25vh;
+        }
+        .r6{
+            height: 25vh;
+        }
+    }
+}
+
+
+.footer{
+    height: 21vh;
+.all15{
+    .zizo{
+        height: 4vh;
+    }
+    .right{
+        margin-left: -12px;
+    }
+}
+p{
+    font-size: 11px;
+}
+    .us{
+        margin-top: 9px;
+    }
+    .com{
+        margin-top: 9px;
+    }
+    .street{
+        margin-top: 9px;
+    }
+    .first{
+        margin-right: 20px;
+    }
+    .second{
+        margin-right: 20px;
+    }
+    .third{
+        margin-right: 20px;
+    }
+}
+}
+
+
+@media only screen and(min-width:993px)and(max-width:1024px){
+
+    .fa-sun:before{
+        margin-left: 616px;
+    }
+    .fa-moon::before{
+        margin-left: 616px;
+    }
+.main-navigation{
+    display: none;
+}
+.navigation{
+
+.logo{
+    margin-left: -72px;
+height: 5vh;
+}
+.link1{
+    position: absolute;
+    margin-left: 270px;
+}
+.link2{
+    position: absolute;
+    margin-left: 436px;
+}
+.link3{
+    position: absolute;
+    margin-right: -660px;
+}
+.dropdown{
+    position: absolute;
+margin-top: 12px;
+height: 9px;
+margin-left: 524px;
+
+}
+.moon{
+height: 2vh;
+}
+}
+
+.banner{
+    .wordnbuttons{
+
+        margin-left: 45px;
+        h1{
+            width: 243px;
+             margin-top: -75px;
+            }
+      p{
+          width: 172px;
+      }
+      .button1{
+          height: 3vh;
+      }
+      .button2{
+        height: 3vh;
+      }
+      .watch {
+          height: 2vh;
+      }
+      .tick{
+        height: 2vh;
+      }
+    }
+        
+     .couple{
+        height: 30vh;
+    }
+    .bride{
+        height: 30vh;
+    }
+    .xul{
+        height: 30vh;
+    }
+    .bucket{
+        height: 30vh;
+    }
+
+    .pics{
+        margin-left: -97px;
+        margin-right: 49px;
+        margin-top: -20px;
+    }
+    }
+
+    .about{
+        .tigz{
+            margin-left: 66px;
+        }
+        .p2{
+            font-size: 13px;
+            margin-left: 168px;
+        }
+        .p3{
+            font-size: 13px;
+            margin-top: 29px;
+        }
+         .sack{
+            margin-left: -138px;
+         }
+        .bags{
+            margin-top: -1px;
+            height: 20vh;
+            margin-left: 172px;
+        }
+        .tutor{
+            margin-left: 382px;
+            height: 20vh;
+            margin-top: -126px;
+        }
+        .youtube{
+            height: 3vh;
+            position: absolute;
+            left: 706px;
+            top: 891px;
+        }
+        .button3{
+            height: 3vh;
+        }
+        .dancing2{
+            margin-right: 46px;
+            margin-left: 30px;
+
+            .dancing{
+                height: 25vh;
+            }
+    
+        }
+    }
+
+    .services{
+        .makule{
+            .kule{
+                height: 40vh;
+            }
+         .arrow{
+            position: absolute;
+            height: 3vh;
+            bottom: -53.9%;
+            left: 28.8%;
+
+         }
+         .events{
+            position: absolute;
+            bottom: -54.2%;
+            left: 13%;
+         }
+
+        }
+        .ds{
+            height: 40vh;
+            .x{
+                height: 3vh;
+                position: absolute;
+                bottom: -53.9%;
+                left: 60.7%;
+            }
+        }
+
+        .looks{
+            .camera{
+                height: 40vh;  
+            }
+            .arrow2{
+                position: absolute;
+                bottom: -53.9%;
+                left: 90.4%;
+                height: 3vh;
+            }
+            .media{
+                position: absolute;
+                bottom: -54.2%;
+                left: 77%;
+            }
+        }
+
+
+       
+    }
+.clients{
+    margin-top: 90px;
+}
+
+    .serve2{
+        .fatso{
+            margin-top: 20px;
+        }
+        .fatso2{
+            margin-top: 20px;
+        }
+        .gentlemen{
+            height: 20vh;
+        }
+        .guyz{
+            .right{
+                margin-top: 225px;
+            }
+            margin-left: 91px;
+        }
+        .muroora{
+            height: 20vh;
+        }
+        .bride{
+            .right2{
+                margin-top: 225px;
+            }
+            margin-left: 46px;
+            margin-top: 51px;
+        }
+    }
+
+    
+    
+    .asseen{
+        .photogrid{
+            margin-left: 10px;
+    .r1{
+        height: 25vh;
+    }
+    .r2{
+        height: 25vh;
+    }
+    .r3{
+        height: 25vh;
+    }
+    .r4{
+        height: 25vh;
+    }
+    .r5{
+        height: 25vh;
+    }
+    .r6{
+        height: 25vh;
+    }
+    
+        }
+    }
+
+    .footer{
+        height: 20vh;
+.all15{
+    .zizo{
+        height: 4vh;
+    }
+}
+        
+    }
+  
+    
+}
+
+@media(min-width:769px){
+    .icon--menu-toggle{
+        display: none;
+    }
+}

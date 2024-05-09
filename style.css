@@ -1000,7 +1000,7 @@ h1 {
   }
   .banner .content {
     margin-left: 72px;
-    margin-top: 343px;
+    margin-top: 351px;
   }
   .banner .content2 {
     margin-left: 72px;
@@ -1008,7 +1008,7 @@ h1 {
   .banner .buttons {
     left: 26px;
     position: absolute;
-    margin-top: 274px;
+    margin-top: 283px;
   }
   .banner .watch {
     margin-left: -119px;
@@ -1245,10 +1245,10 @@ h1 {
 
 @media (min-width: 577px) and (max-width: 768px) {
   .fa-sun:before {
-    margin-left: -103px;
+    margin-left: 577px;
   }
   .fa-moon::before {
-    margin-left: -103px;
+    margin-left: 577px;
   }
   .icon--menu-toggle {
     display: none;
@@ -1257,25 +1257,30 @@ h1 {
     display: none;
   }
   .navigation .logo {
-    margin-left: -12px;
+    position: absolute;
+    margin-left: -510px;
     height: 5vh;
     margin-top: -5px;
   }
   .navigation .link2 {
-    margin-left: 37px;
+    position: absolute;
+    margin-left: 198px;
     color: purple;
   }
   .navigation a {
     text-decoration: none;
   }
   .navigation .link1 {
-    margin-left: 46px;
+    position: absolute;
+    margin-left: 32px;
   }
   .navigation .link3 {
-    margin-left: 38px;
+    position: absolute;
+    margin-left: 565px;
   }
   .navigation .dropdown {
-    margin-left: 3px;
+    position: absolute;
+    margin-left: 287px;
   }
   .banner .all {
     margin-left: 27px;
@@ -1374,12 +1379,12 @@ h1 {
     position: absolute;
     margin-top: -192px;
     margin-left: -44px;
-    bottom: -50%;
+    bottom: -49%;
   }
   .services .all3 .makule .arrow {
     position: absolute;
     height: 4vh;
-    bottom: -50.2%;
+    bottom: -48.2%;
     left: 27.5%;
   }
   .services .all3 .ds {
@@ -1401,18 +1406,18 @@ h1 {
   }
   .services .all3 .ds .x {
     position: absolute;
-    bottom: -50.2%;
+    bottom: -48.2%;
     left: 62.7%;
   }
   .services .all3 .looks .media {
     position: absolute;
     margin-top: -577px;
     margin-left: 29px;
-    bottom: -50%;
+    bottom: -49%;
   }
   .services .all3 .looks .arrow2 {
     position: absolute;
-    bottom: -50.2%;
+    bottom: -48.2%;
     height: 4vh;
     left: 92.9%;
   }
@@ -1510,17 +1515,19 @@ h1 {
 
 @media only screen and (min-width: 993px) and (max-width: 1024px) {
   .fa-sun:before {
-    margin-left: 616px;
+    margin-left: 820px;
   }
   .fa-moon::before {
-    margin-left: 616px;
+    margin-left: 820px;
   }
   .main-navigation {
     display: none;
   }
   .navigation .logo {
+    position: absolute;
+    left: 11%;
     margin-left: -72px;
-    height: 5vh;
+    height: 4vh;
   }
   .navigation .link1 {
     position: absolute;
@@ -1542,6 +1549,9 @@ h1 {
   }
   .navigation .moon {
     height: 2vh;
+  }
+  .banner .all {
+    margin-top: 41px;
   }
   .banner .wordnbuttons {
     margin-left: 45px;
@@ -1604,7 +1614,7 @@ h1 {
   .about .tutor {
     margin-left: 382px;
     height: 20vh;
-    margin-top: -126px;
+    margin-top: -164px;
   }
   .about .youtube {
     height: 3vh;
@@ -1613,6 +1623,7 @@ h1 {
     top: 891px;
   }
   .about .button3 {
+    margin-top: 11px;
     height: 3vh;
   }
   .about .dancing2 {
@@ -1628,12 +1639,12 @@ h1 {
   .services .makule .arrow {
     position: absolute;
     height: 3vh;
-    bottom: -53.9%;
+    bottom: -50.4%;
     left: 28.8%;
   }
   .services .makule .events {
     position: absolute;
-    bottom: -54.2%;
+    bottom: -50.4%;
     left: 13%;
   }
   .services .ds {
@@ -1642,7 +1653,7 @@ h1 {
   .services .ds .x {
     height: 3vh;
     position: absolute;
-    bottom: -53.9%;
+    bottom: -50.4%;
     left: 60.7%;
   }
   .services .looks .camera {
@@ -1650,13 +1661,13 @@ h1 {
   }
   .services .looks .arrow2 {
     position: absolute;
-    bottom: -53.9%;
+    bottom: -50.4%;
     left: 90.4%;
     height: 3vh;
   }
   .services .looks .media {
     position: absolute;
-    bottom: -54.2%;
+    bottom: -50.4%;
     left: 77%;
   }
   .clients {

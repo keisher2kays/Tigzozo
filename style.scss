@@ -250,7 +250,8 @@ h1 {
 
     .logo{
         height: 8vh;
-        margin-left: -75px;
+        margin-left: -987px;
+        position: absolute;
     }
     
     a{
@@ -354,6 +355,7 @@ h1 {
 
 .about{
     .p3{
+        margin-top: 20px;
         font-family: "jose",JosefinSans ;
     }
     .all2{
@@ -387,6 +389,7 @@ h1 {
     }
 }
 .button3{
+    margin-top: 13px;
     font-family: "jose",JosefinSans ;
     background-color: purple;
     border-style: none;
@@ -431,14 +434,14 @@ h1 {
         font-weight: bolder;
         font-family: "jose",JosefinSans ;
         position: absolute;
-        bottom: -215.2%;
+        bottom: -210.9%;
         left: 18%;
         color: white;
     }
     .arrow{
         position: absolute;
         height: 5vh;
-        bottom: -214.1%;
+        bottom: -210.6%;
         left:30.7% ;
     }
     .ds{
@@ -488,13 +491,13 @@ h1 {
     }
     .x{
         position: absolute;
-        bottom: -214.1%;
+        bottom: -210.6%;
         left: 62.6%;
 
     }
     .arrow2{
         position: absolute;
-        bottom: -214.1%;
+        bottom: -210.6%;
         height: 5vh;
         left: 87.3%;
     }
@@ -503,7 +506,7 @@ h1 {
         font-size: 19px;
         font-family: "jose",JosefinSans ;
         position: absolute;
-        bottom: -215.2%;
+        bottom: -210.9%;
         left: 76%;
         color: white;
     }

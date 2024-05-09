@@ -285,20 +285,25 @@ h1 {
  
     .all{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .pics{
-        margin-right: 98px;
-        margin-top: -20px;
+        // margin-right: 98px;
+        margin-top: 40px;
+        display: flex;
+        // justify-content: s;
     }
     .bride{
+        margin-right: 10px;
         height: 70vh;
         margin-top: 84px;
     }
     .couple{
+        margin-right: 10px;
         height: 70vh;
     }
     .bucket{
+        margin-right: 10px;
         height: 70vh;
         margin-top: 84px;
     }
@@ -307,7 +312,7 @@ h1 {
     }
     .wordnbuttons{
         width: 373px;
-        margin-left: 112px;
+        // margin-left: 112px;
         margin-top: 129px;
     }
     .button1{
@@ -341,10 +346,12 @@ h1 {
     display: flex;
 }
 .p1{
+    margin-left: 14px;
     color: purple;
     font-family: "jose",JosefinSans ;
 }
 .p12{
+    margin-left: 14px;
     font-family: "jose",JosefinSans ;
 }
 .p2{
@@ -353,7 +360,7 @@ h1 {
   
 }
 
-.about{
+#Aboutus{
     .p3{
         margin-top: 20px;
         font-family: "jose",JosefinSans ;
@@ -403,13 +410,13 @@ h1 {
     height: 5vh;
     bottom: -685px;
     border-radius: 29px;
-    left: 834px;
-    top: 850px;
+    left: 850px;
+    top: 900px;
 }
 
 }
 
-.services{
+#services{
    
     
     .all3{
@@ -434,15 +441,15 @@ h1 {
         font-weight: bolder;
         font-family: "jose",JosefinSans ;
         position: absolute;
-        bottom: -210.9%;
+        bottom: -220.9%;
         left: 18%;
         color: white;
     }
     .arrow{
         position: absolute;
         height: 5vh;
-        bottom: -210.6%;
-        left:30.7% ;
+        bottom: -220.1%;
+        left:30.6% ;
     }
     .ds{
         background-color: purple;
@@ -491,22 +498,22 @@ h1 {
     }
     .x{
         position: absolute;
-        bottom: -210.6%;
-        left: 62.6%;
+        bottom: -220.1%;
+        left: 62.4%;
 
     }
     .arrow2{
         position: absolute;
-        bottom: -210.6%;
+        bottom: -220.1%;
         height: 5vh;
-        left: 87.3%;
+        left: 87.2%;
     }
     .media{
         font-weight: bolder;
         font-size: 19px;
         font-family: "jose",JosefinSans ;
         position: absolute;
-        bottom: -210.9%;
+        bottom: -220.9%;
         left: 76%;
         color: white;
     }
@@ -799,13 +806,13 @@ margin-top: 27px;
     .bride{
         margin-left: -363px;
         height: 39vh;
-        margin-top: 230px;
+        margin-top: 169px;
     }
     .couple{
         height: 39vh;
         position: absolute;
         top: 38.5%;
-        margin-left: 16px;
+        margin-left: -252px;
     }
     .bucket{
         display: none;
@@ -814,7 +821,7 @@ margin-top: 27px;
         height: 39vh;
         position: absolute;
         top: 38.5%;
-        margin-left: 135px;
+        margin-left: -142px;
     }
     .content{
         margin-left: 72px;
@@ -836,7 +843,7 @@ margin-top: 27px;
         margin-left: -119px;
     }
  }
- .about{
+ #Aboutus{
     .tigz{
         margin-top: 43px;
         margin-left: 32px;
@@ -884,7 +891,7 @@ margin-top: 27px;
   
  }
 
- .services{
+ #services{
    .clk{
     margin-left: 28px;
     margin-top: 47px;
@@ -910,12 +917,12 @@ margin-top: 27px;
             margin-top: 117px;
             position: absolute;
             margin-left: 73px;
-            top: 264%;
+            top: 267%;
         }
 
         .arrow{
             height: 5vh;
-            bottom: -185.7%;
+            bottom: -188.7%;
             left: 85,9%;
             position: absolute;
             margin-left: 205px;
@@ -940,7 +947,7 @@ margin-top: 27px;
             
         .x{
             left: 84.6%;
-            bottom: -228.9%;
+            bottom: -231.9%;
             position: absolute;
         }
         .ds2{
@@ -958,13 +965,13 @@ margin-top: 27px;
         }
         .arrow2{
             position: absolute;
-            bottom: -272.2%;
+            bottom: -275.2%;
             left: 85.1%;
         }
         .media{
             color: white;
             position: absolute;
-            bottom: -272.9%;
+            bottom: -275.9%;
             left: 40.1%;
         }
 
@@ -1168,7 +1175,7 @@ margin-top: 27px;
                 display: none;
             }
             .xul{
-                margin-top: -340px;
+                margin-top: 83px;
                 height: 28vh;
             }
 
@@ -1191,8 +1198,8 @@ margin-top: 27px;
                 width: 245px;
             }
             .couple{
-                margin-left: 135px;
-                margin-top: -237px;
+                margin-left: 1px;
+                margin-top: 83px;
                 height: 28vh;
             }
             .bride{
@@ -1207,7 +1214,7 @@ margin-top: 27px;
        
     }
 
-    .about{
+    #Aboutus{
         .tigz{
             margin-left: 49px;
             margin-top: 60px;
@@ -1246,13 +1253,13 @@ margin-top: 27px;
         .youtube{
             height: 3vh;
             left:539px;
-            top:699px;
+            top:660px;
             bottom: -671px;
             position: absolute;
         }
     }
 
-    .services{
+    #services{
    .clk{
     margin-left: 49px;
     margin-top: 76px;
@@ -1520,11 +1527,11 @@ height: 2vh;
     .pics{
         margin-left: -97px;
         margin-right: 49px;
-        margin-top: -20px;
+        margin-top: 26px;
     }
     }
 
-    .about{
+    #Aboutus{
         .tigz{
             margin-left: 66px;
         }
@@ -1570,7 +1577,7 @@ height: 2vh;
         }
     }
 
-    .services{
+    #services{
         .makule{
             .kule{
                 height: 40vh;

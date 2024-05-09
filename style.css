@@ -421,26 +421,31 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .banner .pics {
-  margin-right: 98px;
-  margin-top: -20px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .banner .bride {
+  margin-right: 10px;
   height: 70vh;
   margin-top: 84px;
 }
 
 .banner .couple {
+  margin-right: 10px;
   height: 70vh;
 }
 
 .banner .bucket {
+  margin-right: 10px;
   height: 70vh;
   margin-top: 84px;
 }
@@ -451,7 +456,6 @@ h1 {
 
 .banner .wordnbuttons {
   width: 373px;
-  margin-left: 112px;
   margin-top: 129px;
 }
 
@@ -496,11 +500,13 @@ h1 {
 }
 
 .banner .p1 {
+  margin-left: 14px;
   color: purple;
   font-family: "jose",JosefinSans;
 }
 
 .banner .p12 {
+  margin-left: 14px;
   font-family: "jose",JosefinSans;
 }
 
@@ -508,18 +514,18 @@ h1 {
   font-family: "jose",JosefinSans;
 }
 
-.about .p3 {
+#Aboutus .p3 {
   margin-top: 20px;
   font-family: "jose",JosefinSans;
 }
 
-.about .all2 {
+#Aboutus .all2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.about .tigz {
+#Aboutus .tigz {
   font-weight: bolder;
   font-size: 18px;
   font-family: "jose",JosefinSans;
@@ -527,32 +533,32 @@ h1 {
   margin-left: 160px;
 }
 
-.about .p2 {
+#Aboutus .p2 {
   font-family: "jose",JosefinSans;
   margin-left: 168px;
 }
 
-.about .tutor {
+#Aboutus .tutor {
   margin-left: -5px;
   height: 38vh;
   margin-top: 79px;
 }
 
-.about .bags {
+#Aboutus .bags {
   margin-top: -50px;
   height: 38vh;
   margin-left: 172px;
 }
 
-.about .dancing2 {
+#Aboutus .dancing2 {
   margin-left: 30px;
 }
 
-.about .dancing2 .dancing {
+#Aboutus .dancing2 .dancing {
   height: 48vh;
 }
 
-.about .button3 {
+#Aboutus .button3 {
   margin-top: 13px;
   font-family: "jose",JosefinSans;
   background-color: purple;
@@ -562,23 +568,23 @@ h1 {
   width: 110px;
 }
 
-.about .youtube {
+#Aboutus .youtube {
   height: 10vh;
   position: absolute;
   height: 5vh;
   bottom: -685px;
   border-radius: 29px;
-  left: 834px;
-  top: 850px;
+  left: 850px;
+  top: 900px;
 }
 
-.services .all3 {
+#services .all3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.services .clk {
+#services .clk {
   font-size: 18px;
   font-weight: bolder;
   font-family: "jose",JosefinSans;
@@ -587,30 +593,30 @@ h1 {
   margin-bottom: 50px;
 }
 
-.services .kule {
+#services .kule {
   height: 84vh;
   width: 93%;
   margin-right: 20px;
 }
 
-.services .events {
+#services .events {
   font-size: 19px;
   font-weight: bolder;
   font-family: "jose",JosefinSans;
   position: absolute;
-  bottom: -210.9%;
+  bottom: -220.9%;
   left: 18%;
   color: white;
 }
 
-.services .arrow {
+#services .arrow {
   position: absolute;
   height: 5vh;
-  bottom: -210.6%;
-  left: 30.7%;
+  bottom: -220.1%;
+  left: 30.6%;
 }
 
-.services .ds {
+#services .ds {
   background-color: purple;
   width: 38%;
   height: 84vh;
@@ -618,40 +624,40 @@ h1 {
   color: white;
 }
 
-.services .ds ol {
+#services .ds ol {
   line-height: 3rem;
   margin-left: 20px;
 }
 
-.services .ds ol li {
+#services .ds ol li {
   font-family: "jose",JosefinSans;
   font-size: 15px;
 }
 
-.services .ds ol .logos {
+#services .ds ol .logos {
   text-decoration: underline;
 }
 
-.services .camera {
+#services .camera {
   height: 84vh;
   width: 93%;
 }
 
-.services .h3 {
+#services .h3 {
   color: white;
   position: absolute;
   left: 20%;
   bottom: -213.9%;
 }
 
-.services .h32 {
+#services .h32 {
   color: white;
   position: absolute;
   left: 75.1%;
   bottom: -213.9%;
 }
 
-.services .ds2 {
+#services .ds2 {
   margin-top: 20px;
   font-size: 17px;
   font-weight: bolder;
@@ -659,25 +665,25 @@ h1 {
   margin-left: 25px;
 }
 
-.services .x {
+#services .x {
   position: absolute;
-  bottom: -210.6%;
-  left: 62.6%;
+  bottom: -220.1%;
+  left: 62.4%;
 }
 
-.services .arrow2 {
+#services .arrow2 {
   position: absolute;
-  bottom: -210.6%;
+  bottom: -220.1%;
   height: 5vh;
-  left: 87.3%;
+  left: 87.2%;
 }
 
-.services .media {
+#services .media {
   font-weight: bolder;
   font-size: 19px;
   font-family: "jose",JosefinSans;
   position: absolute;
-  bottom: -210.9%;
+  bottom: -220.9%;
   left: 76%;
   color: white;
 }
@@ -981,13 +987,13 @@ h1 {
   .banner .bride {
     margin-left: -363px;
     height: 39vh;
-    margin-top: 230px;
+    margin-top: 169px;
   }
   .banner .couple {
     height: 39vh;
     position: absolute;
     top: 38.5%;
-    margin-left: 16px;
+    margin-left: -252px;
   }
   .banner .bucket {
     display: none;
@@ -996,7 +1002,7 @@ h1 {
     height: 39vh;
     position: absolute;
     top: 38.5%;
-    margin-left: 135px;
+    margin-left: -142px;
   }
   .banner .content {
     margin-left: 72px;
@@ -1016,104 +1022,104 @@ h1 {
   .banner .tick {
     margin-left: -119px;
   }
-  .about .tigz {
+  #Aboutus .tigz {
     margin-top: 43px;
     margin-left: 32px;
   }
-  .about .p2 {
+  #Aboutus .p2 {
     font-size: 14px;
     width: 359px;
     margin-left: 17px;
   }
-  .about .all2 {
+  #Aboutus .all2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about .bags {
+  #Aboutus .bags {
     margin-top: 14px;
     height: 29vh;
     margin-left: 23px;
   }
-  .about .tutor {
+  #Aboutus .tutor {
     height: 29vh;
     margin-top: 13px;
   }
-  .about .dancing2 .youtube {
+  #Aboutus .dancing2 .youtube {
     position: absolute;
     left: 156px;
     top: 1225px;
   }
-  .about .dancing2 .dancing {
+  #Aboutus .dancing2 .dancing {
     margin-left: -8px;
     margin-top: 5px;
     height: 41vh;
   }
-  .about .button3 {
+  #Aboutus .button3 {
     margin-left: -8px;
   }
-  .about .p3 {
+  #Aboutus .p3 {
     font-size: 14px;
     margin-left: -9px;
     width: 359px;
     margin-top: 12px;
   }
-  .services .clk {
+  #services .clk {
     margin-left: 28px;
     margin-top: 47px;
     margin-bottom: 26px;
   }
-  .services .all3 {
+  #services .all3 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .services .all3 .makule .kule {
+  #services .all3 .makule .kule {
     -o-object-fit: cover;
        object-fit: cover;
     margin-left: 17px;
     height: 40vh;
     width: 93%;
   }
-  .services .all3 .makule .events {
+  #services .all3 .makule .events {
     color: white;
     margin-top: 117px;
     position: absolute;
     margin-left: 73px;
-    top: 264%;
+    top: 267%;
   }
-  .services .all3 .makule .arrow {
+  #services .all3 .makule .arrow {
     height: 5vh;
-    bottom: -185.7%;
+    bottom: -188.7%;
     left: 85,9%;
     position: absolute;
     margin-left: 205px;
   }
-  .services .all3 .ds {
+  #services .all3 .ds {
     font-size: 20px;
     margin-left: 14px;
     width: 93%;
     height: 40vh;
     margin-top: 20px;
   }
-  .services .all3 .ds ol {
+  #services .all3 .ds ol {
     line-height: 23px;
     margin-left: -2px;
   }
-  .services .all3 .ds li {
+  #services .all3 .ds li {
     font-size: 13px;
   }
-  .services .all3 .ds .x {
+  #services .all3 .ds .x {
     left: 84.6%;
-    bottom: -228.9%;
+    bottom: -231.9%;
     position: absolute;
   }
-  .services .all3 .ds .ds2 {
+  #services .all3 .ds .ds2 {
     margin-top: 6px;
   }
-  .services .all3 .looks .camera {
+  #services .all3 .looks .camera {
     -o-object-fit: cover;
        object-fit: cover;
     margin-left: 15px;
@@ -1121,15 +1127,15 @@ h1 {
     height: 40vh;
     width: 93%;
   }
-  .services .all3 .looks .arrow2 {
+  #services .all3 .looks .arrow2 {
     position: absolute;
-    bottom: -272.2%;
+    bottom: -275.2%;
     left: 85.1%;
   }
-  .services .all3 .looks .media {
+  #services .all3 .looks .media {
     color: white;
     position: absolute;
-    bottom: -272.9%;
+    bottom: -275.9%;
     left: 40.1%;
   }
   .clients {
@@ -1295,7 +1301,7 @@ h1 {
     display: none;
   }
   .banner .all .xul {
-    margin-top: -340px;
+    margin-top: 83px;
     height: 28vh;
   }
   .banner .all .wordnbuttons {
@@ -1317,8 +1323,8 @@ h1 {
     width: 245px;
   }
   .banner .all .couple {
-    margin-left: 135px;
-    margin-top: -237px;
+    margin-left: 1px;
+    margin-top: 83px;
     height: 28vh;
   }
   .banner .all .bride {
@@ -1326,21 +1332,21 @@ h1 {
     height: 28vh;
     margin-top: 84px;
   }
-  .about .tigz {
+  #Aboutus .tigz {
     margin-left: 49px;
     margin-top: 60px;
   }
-  .about .p2 {
+  #Aboutus .p2 {
     margin-top: 15px;
     margin-left: 28px;
     width: 299px;
     font-size: 13px;
   }
-  .about .p3 {
+  #Aboutus .p3 {
     margin-top: 10px;
     font-size: 13px;
   }
-  .about .bags {
+  #Aboutus .bags {
     -o-object-fit: cover;
        object-fit: cover;
     width: 89%;
@@ -1348,83 +1354,83 @@ h1 {
     margin-top: 11px;
     margin-left: 32px;
   }
-  .about .sack {
+  #Aboutus .sack {
     margin-left: -10px;
   }
-  .about .dancing2 {
+  #Aboutus .dancing2 {
     margin-left: 48px;
   }
-  .about .dancing2 .dancing {
+  #Aboutus .dancing2 .dancing {
     height: 27vh;
   }
-  .about .tutor {
+  #Aboutus .tutor {
     display: none;
   }
-  .about .youtube {
+  #Aboutus .youtube {
     height: 3vh;
     left: 539px;
-    top: 699px;
+    top: 660px;
     bottom: -671px;
     position: absolute;
   }
-  .services .clk {
+  #services .clk {
     margin-left: 49px;
     margin-top: 76px;
     margin-bottom: 20px;
   }
-  .services .all3 .makule .kule {
+  #services .all3 .makule .kule {
     width: 132%;
     margin-left: -24px;
     height: 39vh;
     margin-right: 0px;
   }
-  .services .all3 .makule .events {
+  #services .all3 .makule .events {
     position: absolute;
     margin-top: -192px;
     margin-left: -44px;
     bottom: -49%;
   }
-  .services .all3 .makule .arrow {
+  #services .all3 .makule .arrow {
     position: absolute;
     height: 4vh;
     bottom: -48.2%;
     left: 27.5%;
   }
-  .services .all3 .ds {
+  #services .all3 .ds {
     width: 48%;
     height: 39vh;
     margin-left: 41px;
   }
-  .services .all3 .ds .ds2 {
+  #services .all3 .ds .ds2 {
     font-size: 17px;
     margin-left: 12px;
   }
-  .services .all3 .ds ol {
+  #services .all3 .ds ol {
     width: 200px;
     line-height: 32px;
     margin-left: 2px;
   }
-  .services .all3 .ds li {
+  #services .all3 .ds li {
     font-size: 17px;
   }
-  .services .all3 .ds .x {
+  #services .all3 .ds .x {
     position: absolute;
     bottom: -48.2%;
     left: 62.7%;
   }
-  .services .all3 .looks .media {
+  #services .all3 .looks .media {
     position: absolute;
     margin-top: -577px;
     margin-left: 29px;
     bottom: -49%;
   }
-  .services .all3 .looks .arrow2 {
+  #services .all3 .looks .arrow2 {
     position: absolute;
     bottom: -48.2%;
     height: 4vh;
     left: 92.9%;
   }
-  .services .all3 .looks .camera {
+  #services .all3 .looks .camera {
     height: 39vh;
     width: 118%;
     margin-left: -12px;
@@ -1593,82 +1599,82 @@ h1 {
   .banner .pics {
     margin-left: -97px;
     margin-right: 49px;
-    margin-top: -20px;
+    margin-top: 26px;
   }
-  .about .tigz {
+  #Aboutus .tigz {
     margin-left: 66px;
   }
-  .about .p2 {
+  #Aboutus .p2 {
     font-size: 13px;
     margin-left: 168px;
   }
-  .about .p3 {
+  #Aboutus .p3 {
     font-size: 13px;
     margin-top: 29px;
   }
-  .about .sack {
+  #Aboutus .sack {
     margin-left: -138px;
   }
-  .about .bags {
+  #Aboutus .bags {
     margin-top: -1px;
     height: 20vh;
     margin-left: 172px;
   }
-  .about .tutor {
+  #Aboutus .tutor {
     margin-left: 382px;
     height: 20vh;
     margin-top: -164px;
   }
-  .about .youtube {
+  #Aboutus .youtube {
     height: 3vh;
     position: absolute;
     left: 706px;
     top: 891px;
   }
-  .about .button3 {
+  #Aboutus .button3 {
     margin-top: 11px;
     height: 3vh;
   }
-  .about .dancing2 {
+  #Aboutus .dancing2 {
     margin-right: 46px;
     margin-left: 30px;
   }
-  .about .dancing2 .dancing {
+  #Aboutus .dancing2 .dancing {
     height: 25vh;
   }
-  .services .makule .kule {
+  #services .makule .kule {
     height: 40vh;
   }
-  .services .makule .arrow {
+  #services .makule .arrow {
     position: absolute;
     height: 3vh;
     bottom: -50.4%;
     left: 28.8%;
   }
-  .services .makule .events {
+  #services .makule .events {
     position: absolute;
     bottom: -50.4%;
     left: 13%;
   }
-  .services .ds {
+  #services .ds {
     height: 40vh;
   }
-  .services .ds .x {
+  #services .ds .x {
     height: 3vh;
     position: absolute;
     bottom: -50.4%;
     left: 60.7%;
   }
-  .services .looks .camera {
+  #services .looks .camera {
     height: 40vh;
   }
-  .services .looks .arrow2 {
+  #services .looks .arrow2 {
     position: absolute;
     bottom: -50.4%;
     left: 90.4%;
     height: 3vh;
   }
-  .services .looks .media {
+  #services .looks .media {
     position: absolute;
     bottom: -50.4%;
     left: 77%;

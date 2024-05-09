@@ -788,7 +788,7 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 37px;
-  margin-left: 200px;
+  margin-left: 102px;
 }
 
 .asseen .hashtag {
@@ -1182,6 +1182,9 @@ h1 {
   .serve2 .bride .fatso2 {
     margin-top: 20px;
     margin-left: -99px;
+  }
+  .asseen .photogrid {
+    margin-left: 190px;
   }
   .asseen .seen {
     margin-top: 61px;
@@ -1699,7 +1702,7 @@ h1 {
     margin-top: 225px;
   }
   .asseen .photogrid {
-    margin-left: 10px;
+    margin-left: -8px;
   }
   .asseen .photogrid .r1 {
     height: 25vh;

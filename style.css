@@ -531,6 +531,7 @@ h1 {
 }
 
 .about .tutor {
+  margin-left: -5px;
   height: 38vh;
   margin-top: 79px;
 }

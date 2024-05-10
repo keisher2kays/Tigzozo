@@ -747,6 +747,7 @@ margin-top: 27px;
 }
 .main-navigation{
     .logo{
+        position: relative;
         height: 7vh;
         margin-left: 21px;
         margin-top: -157%;
@@ -785,6 +786,7 @@ margin-top: 27px;
     }
 
     .wordnbuttons{
+        position: relative;
         margin-left: 74px;
     }
     h1{
@@ -831,7 +833,7 @@ margin-top: 27px;
         margin-left: 72px;
     }
     .buttons{
-        left: 26px;
+        left: -46px;
         position: absolute;
         margin-top: 283px;
     }
@@ -862,6 +864,7 @@ margin-top: 27px;
         margin-left: 23px;
     }
     .tutor{
+        margin-left: 1px;
         height: 29vh;
         margin-top: 13px;
     }
@@ -899,6 +902,7 @@ margin-top: 27px;
    }
     
     .all3{
+        position: relative;
         flex-direction: column;
 
 
@@ -917,12 +921,12 @@ margin-top: 27px;
             margin-top: 117px;
             position: absolute;
             margin-left: 73px;
-            top: 267%;
+            top: 15%;
         }
 
         .arrow{
             height: 5vh;
-            bottom: -188.7%;
+            bottom: 68.3%;
             left: 85,9%;
             position: absolute;
             margin-left: 205px;
@@ -947,7 +951,7 @@ margin-top: 27px;
             
         .x{
             left: 84.6%;
-            bottom: -231.9%;
+            bottom: 34.1%;
             position: absolute;
         }
         .ds2{
@@ -965,13 +969,13 @@ margin-top: 27px;
         }
         .arrow2{
             position: absolute;
-            bottom: -275.2%;
+            bottom: -0.2%;
             left: 85.1%;
         }
         .media{
             color: white;
             position: absolute;
-            bottom: -275.9%;
+            bottom: -0.9%;
             left: 40.1%;
         }
 
@@ -987,11 +991,11 @@ margin-top: 27px;
 
 .clients{
     margin-bottom: -76px;
-    margin-left: 38px;
+    margin-left: 26px;
     margin-top: 38px;
 }
 .serve2{
-
+  position: relative;
     flex-direction: column;
   
 
@@ -1585,13 +1589,13 @@ height: 2vh;
          .arrow{
             position: absolute;
             height: 3vh;
-            bottom: -50.4%;
+            bottom: -52.1%;
             left: 28.8%;
 
          }
          .events{
             position: absolute;
-            bottom: -50.4%;
+            bottom: -52.4%;
             left: 13%;
          }
 
@@ -1601,7 +1605,7 @@ height: 2vh;
             .x{
                 height: 3vh;
                 position: absolute;
-                bottom: -50.4%;
+                bottom: -52.1%;
                 left: 60.7%;
             }
         }
@@ -1612,13 +1616,13 @@ height: 2vh;
             }
             .arrow2{
                 position: absolute;
-                bottom: -50.4%;
+                bottom: -52.1%;
                 left: 90.4%;
                 height: 3vh;
             }
             .media{
                 position: absolute;
-                bottom: -50.4%;
+                bottom: -52.4%;
                 left: 77%;
             }
         }

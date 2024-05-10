@@ -955,6 +955,7 @@ h1 {
     margin-top: -4px;
   }
   .main-navigation .logo {
+    position: relative;
     height: 7vh;
     margin-left: 21px;
     margin-top: -157%;
@@ -966,6 +967,7 @@ h1 {
     margin-top: 47px;
   }
   .banner .wordnbuttons {
+    position: relative;
     margin-left: 74px;
   }
   .banner h1 {
@@ -1012,7 +1014,7 @@ h1 {
     margin-left: 72px;
   }
   .banner .buttons {
-    left: 26px;
+    left: -46px;
     position: absolute;
     margin-top: 283px;
   }
@@ -1043,6 +1045,7 @@ h1 {
     margin-left: 23px;
   }
   #Aboutus .tutor {
+    margin-left: 1px;
     height: 29vh;
     margin-top: 13px;
   }
@@ -1071,6 +1074,7 @@ h1 {
     margin-bottom: 26px;
   }
   #services .all3 {
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1088,11 +1092,11 @@ h1 {
     margin-top: 117px;
     position: absolute;
     margin-left: 73px;
-    top: 267%;
+    top: 15%;
   }
   #services .all3 .makule .arrow {
     height: 5vh;
-    bottom: -188.7%;
+    bottom: 68.3%;
     left: 85,9%;
     position: absolute;
     margin-left: 205px;
@@ -1113,7 +1117,7 @@ h1 {
   }
   #services .all3 .ds .x {
     left: 84.6%;
-    bottom: -231.9%;
+    bottom: 34.1%;
     position: absolute;
   }
   #services .all3 .ds .ds2 {
@@ -1129,21 +1133,22 @@ h1 {
   }
   #services .all3 .looks .arrow2 {
     position: absolute;
-    bottom: -275.2%;
+    bottom: -0.2%;
     left: 85.1%;
   }
   #services .all3 .looks .media {
     color: white;
     position: absolute;
-    bottom: -275.9%;
+    bottom: -0.9%;
     left: 40.1%;
   }
   .clients {
     margin-bottom: -76px;
-    margin-left: 38px;
+    margin-left: 26px;
     margin-top: 38px;
   }
   .serve2 {
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1648,12 +1653,12 @@ h1 {
   #services .makule .arrow {
     position: absolute;
     height: 3vh;
-    bottom: -50.4%;
+    bottom: -52.1%;
     left: 28.8%;
   }
   #services .makule .events {
     position: absolute;
-    bottom: -50.4%;
+    bottom: -52.4%;
     left: 13%;
   }
   #services .ds {
@@ -1662,7 +1667,7 @@ h1 {
   #services .ds .x {
     height: 3vh;
     position: absolute;
-    bottom: -50.4%;
+    bottom: -52.1%;
     left: 60.7%;
   }
   #services .looks .camera {
@@ -1670,13 +1675,13 @@ h1 {
   }
   #services .looks .arrow2 {
     position: absolute;
-    bottom: -50.4%;
+    bottom: -52.1%;
     left: 90.4%;
     height: 3vh;
   }
   #services .looks .media {
     position: absolute;
-    bottom: -50.4%;
+    bottom: -52.4%;
     left: 77%;
   }
   .clients {

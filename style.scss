@@ -420,6 +420,7 @@ h1 {
    
     
     .all3{
+        position: relative;
         display: flex;
     }
     .clk{
@@ -441,15 +442,15 @@ h1 {
         font-weight: bolder;
         font-family: "jose",JosefinSans ;
         position: absolute;
-        bottom: -220.9%;
+        bottom: -0.9%;
         left: 18%;
         color: white;
     }
     .arrow{
         position: absolute;
         height: 5vh;
-        bottom: -220.1%;
-        left:30.6% ;
+        bottom: 0%;
+        left:27.1% ;
     }
     .ds{
         background-color: purple;
@@ -498,15 +499,15 @@ h1 {
     }
     .x{
         position: absolute;
-        bottom: -220.1%;
-        left: 62.4%;
+        bottom: 0%;
+        left: 64.7%;
 
     }
     .arrow2{
         position: absolute;
-        bottom: -220.1%;
+        bottom: 0%;
         height: 5vh;
-        left: 87.2%;
+        left: 94.2%;
     }
     .media{
         font-weight: bolder;

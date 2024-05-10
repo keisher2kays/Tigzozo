@@ -579,6 +579,7 @@ h1 {
 }
 
 #services .all3 {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,7 +605,7 @@ h1 {
   font-weight: bolder;
   font-family: "jose",JosefinSans;
   position: absolute;
-  bottom: -220.9%;
+  bottom: -0.9%;
   left: 18%;
   color: white;
 }
@@ -612,8 +613,8 @@ h1 {
 #services .arrow {
   position: absolute;
   height: 5vh;
-  bottom: -220.1%;
-  left: 30.6%;
+  bottom: 0%;
+  left: 27.1%;
 }
 
 #services .ds {
@@ -667,15 +668,15 @@ h1 {
 
 #services .x {
   position: absolute;
-  bottom: -220.1%;
-  left: 62.4%;
+  bottom: 0%;
+  left: 64.7%;
 }
 
 #services .arrow2 {
   position: absolute;
-  bottom: -220.1%;
+  bottom: 0%;
   height: 5vh;
-  left: 87.2%;
+  left: 94.2%;
 }
 
 #services .media {

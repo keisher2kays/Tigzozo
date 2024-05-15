@@ -764,7 +764,7 @@ margin-top: 27px;
     .logo{
         position: relative;
         height: 7vh;
-        margin-left: 16px;
+        margin-left: 87px;
         margin-top: -157%;
     }
 }
@@ -1141,10 +1141,20 @@ margin-top: 27px;
 
 
     .fa-sun:before{
-        margin-left: 577px;
+            /* top: 3%; */
+            position: absolute;
+            margin-top: 7px;
+            /* margin-left: 577px; */
+            left: 87%;
+        
     }
     .fa-moon::before{
-        margin-left: 577px;
+            /* top: 3%; */
+            position: absolute;
+            margin-top: 7px;
+            /* margin-left: 577px; */
+            left: 87%;
+        
     }
 
     .icon--menu-toggle{
@@ -1178,6 +1188,7 @@ margin-top: 27px;
             margin-left: 565px;
         }
         .dropdown{
+            height: 2vh;
             position: absolute;
             margin-left: 287px;
         }
@@ -1463,10 +1474,14 @@ p{
 @media only screen and(min-width:993px)and(max-width:1024px){
 
     .fa-sun:before{
-        margin-left: 820px;
+        margin-top: 4px;
+        left: 90%;
+        position: absolute;
     }
-    .fa-moon::before{
-        margin-left: 820px;
+    .fa-moon:before{
+        margin-top: 4px;
+        left: 90%;
+        position: absolute;
     }
 .main-navigation{
     display: none;
@@ -1493,9 +1508,9 @@ height: 4vh;
 }
 .dropdown{
     position: absolute;
-margin-top: 12px;
-height: 9px;
-margin-left: 524px;
+        margin-top: 8px;
+        height: 15px;
+        margin-left: 524px;
 
 }
 .moon{
@@ -1742,6 +1757,8 @@ height: 2vh;
             margin-left: 42%;
         }
         .dropdown{
+            height: 2vh;
+            margin-top: 7px;
             position: absolute;
             margin-left: 49%;
         }

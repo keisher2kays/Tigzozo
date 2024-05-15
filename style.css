@@ -972,7 +972,7 @@ h1 {
   .main-navigation .logo {
     position: relative;
     height: 7vh;
-    margin-left: 16px;
+    margin-left: 87px;
     margin-top: -157%;
   }
   .navigation {
@@ -1274,10 +1274,18 @@ h1 {
 
 @media (min-width: 577px) and (max-width: 768px) {
   .fa-sun:before {
-    margin-left: 577px;
+    /* top: 3%; */
+    position: absolute;
+    margin-top: 7px;
+    /* margin-left: 577px; */
+    left: 87%;
   }
   .fa-moon::before {
-    margin-left: 577px;
+    /* top: 3%; */
+    position: absolute;
+    margin-top: 7px;
+    /* margin-left: 577px; */
+    left: 87%;
   }
   .icon--menu-toggle {
     display: none;
@@ -1308,6 +1316,7 @@ h1 {
     margin-left: 565px;
   }
   .navigation .dropdown {
+    height: 2vh;
     position: absolute;
     margin-left: 287px;
   }
@@ -1544,10 +1553,14 @@ h1 {
 
 @media only screen and (min-width: 993px) and (max-width: 1024px) {
   .fa-sun:before {
-    margin-left: 820px;
+    margin-top: 4px;
+    left: 90%;
+    position: absolute;
   }
-  .fa-moon::before {
-    margin-left: 820px;
+  .fa-moon:before {
+    margin-top: 4px;
+    left: 90%;
+    position: absolute;
   }
   .main-navigation {
     display: none;
@@ -1572,8 +1585,8 @@ h1 {
   }
   .navigation .dropdown {
     position: absolute;
-    margin-top: 12px;
-    height: 9px;
+    margin-top: 8px;
+    height: 15px;
     margin-left: 524px;
   }
   .navigation .moon {
@@ -1776,6 +1789,8 @@ h1 {
     margin-left: 42%;
   }
   .navigation .dropdown {
+    height: 2vh;
+    margin-top: 7px;
     position: absolute;
     margin-left: 49%;
   }

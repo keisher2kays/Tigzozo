@@ -1829,6 +1829,14 @@ height: 2vh;
         .dancing{
             position: relative;
         }
+        .p2{
+            font-family: "jose", JosefinSans;
+            font-size: 17px;
+        }
+        .p3{
+            font-family: "jose", JosefinSans;
+            font-size: 17px;
+        }
 
     }
     #services{
@@ -1853,6 +1861,16 @@ height: 2vh;
             height: 84vh;
             margin-right: 36px;
             color: white;
+
+            ol {
+                line-height: 3.5rem;
+                margin-left: 20px;
+
+                li{
+                    font-size: 17px;
+                }
+            }
+           
         }
         .media{
             position: absolute;

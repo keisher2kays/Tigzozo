@@ -1848,6 +1848,14 @@ h1 {
   #Aboutus .dancing {
     position: relative;
   }
+  #Aboutus .p2 {
+    font-family: "jose", JosefinSans;
+    font-size: 17px;
+  }
+  #Aboutus .p3 {
+    font-family: "jose", JosefinSans;
+    font-size: 17px;
+  }
   #services .x {
     position: absolute;
     bottom: 0%;
@@ -1869,6 +1877,13 @@ h1 {
     height: 84vh;
     margin-right: 36px;
     color: white;
+  }
+  #services .ds ol {
+    line-height: 3.5rem;
+    margin-left: 20px;
+  }
+  #services .ds ol li {
+    font-size: 17px;
   }
   #services .media {
     position: absolute;

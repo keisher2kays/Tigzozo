@@ -972,7 +972,7 @@ h1 {
   .main-navigation .logo {
     position: relative;
     height: 7vh;
-    margin-left: 87px;
+    margin-left: 26px;
     margin-top: -157%;
   }
   .navigation {
@@ -986,7 +986,7 @@ h1 {
     margin-left: 74px;
   }
   .banner h1 {
-    width: 366px;
+    width: 340px;
     margin-top: -79px;
     margin-left: -50px;
   }
@@ -1002,24 +1002,24 @@ h1 {
     margin-left: 5px;
   }
   .banner .bride {
-    margin-left: -363px;
+    margin-left: -351px;
     height: 39vh;
     margin-top: 169px;
   }
   .banner .couple {
     height: 39vh;
-    position: absolute;
-    top: 38.5%;
-    margin-left: -252px;
+    position: relative;
+    top: 29.5%;
+    margin-left: -2px;
   }
   .banner .bucket {
     display: none;
   }
   .banner .xul {
     height: 39vh;
-    position: absolute;
-    top: 38.5%;
-    margin-left: -142px;
+    position: relative;
+    top: 29.5%;
+    margin-left: 0px;
   }
   .banner .content {
     margin-left: 72px;
@@ -1045,7 +1045,7 @@ h1 {
   }
   #Aboutus .p2 {
     font-size: 14px;
-    width: 359px;
+    width: 334px;
     margin-left: 17px;
   }
   #Aboutus .all2 {
@@ -1080,7 +1080,7 @@ h1 {
   #Aboutus .p3 {
     font-size: 14px;
     margin-left: -9px;
-    width: 359px;
+    width: 334px;
     margin-top: 12px;
   }
   #services .clk {

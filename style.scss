@@ -293,6 +293,7 @@ h1 {
         font-family: "jose",JosefinSans ;
     }
     p{
+        font-size: 20px;
         font-weight: 700;
         font-family: "jose",JosefinSans ;
     }
@@ -349,12 +350,16 @@ h1 {
     .content{
         margin-top: 21px;
         .watch{
+            margin-left: 1px;
+            border-radius: 50px;
             height: 4vh;
         }
     display: flex;
 }
 .content2{
     .tick{
+        margin-left: 1px;
+        border-radius: 50px;
         height: 4vh;
     }
     display: flex;
@@ -409,6 +414,7 @@ h1 {
         height: 48vh;
     }
 }
+
 .button3{
     margin-top: 13px;
     font-family: "jose",JosefinSans ;
@@ -464,13 +470,13 @@ h1 {
         position: absolute;
         height: 5vh;
         bottom: 0%;
-        left:27.1% ;
+        left:27.9% ;
     }
     .ds{
         background-color: purple;
         width: 38%;
         height: 84vh;
-        margin-right: 20px;
+        margin-right: 36px;
         color: white;
 
         ol{
@@ -514,14 +520,14 @@ h1 {
     .x{
         position: absolute;
         bottom: 0%;
-        left: 64.7%;
+        left: 62.3%;
 
     }
     .arrow2{
         position: absolute;
         bottom: 0%;
         height: 5vh;
-        left: 94.2%;
+        left: 93.8%;
     }
     .media{
         font-weight: bolder;
@@ -841,11 +847,11 @@ margin-top: 27px;
         margin-left: 0px;
     }
     .content{
-        margin-left: 72px;
+        margin-left: -46px;
         margin-top: 351px;
     }
     .content2{
-        margin-left: 72px;
+        margin-left: -46px;
     }
     .buttons{
         left: -46px;
@@ -1746,7 +1752,7 @@ height: 2vh;
     .navigation{
         .logo{
             position: absolute;
-            margin-left: -1078px;
+            margin-left: -1147px;
         }
         .link1{
             position: absolute;
@@ -1785,6 +1791,14 @@ height: 2vh;
         .pics{
             margin-top: 86px;
         }
+        p{
+            width: 385px;
+        }
+        // .content{
+        //     .watch{
+        //         border-radius: 50px;
+        //     }
+        // }
     }
 
     #Aboutus{
@@ -1812,18 +1826,21 @@ height: 2vh;
         .sack{
             margin-left: 24px;
         }
+        .dancing{
+            position: relative;
+        }
 
     }
     #services{
         .x{
             position: absolute;
     bottom: 0%;
-    left: 63.5%;
+    left: 62.3%;
         }
         .arrow{
             position: absolute;
             bottom: 0%;
-            left: 28.8%;
+            left: 27.9%;
         }
         .arrow2{
             position: absolute;
@@ -1834,7 +1851,7 @@ height: 2vh;
             background-color: purple;
             width: 33%;
             height: 84vh;
-            margin-right: 20px;
+            margin-right: 36px;
             color: white;
         }
         .media{
@@ -1868,12 +1885,22 @@ height: 2vh;
             }
         }
         .bride{
+            margin-top: 26px;
+
+            .muroora{
+                position: relative;
+            }
             .right2 {
                 margin-left: -47px;
                 margin-top: 325px;
                 position: absolute;
             }
         } 
+        .guyz{
+            .gentlemen{
+                position: relative;
+            }
+        }
       
     }
      

@@ -427,6 +427,7 @@ h1 {
 }
 
 .banner p {
+  font-size: 20px;
   font-weight: 700;
   font-family: "jose",JosefinSans;
 }
@@ -500,6 +501,8 @@ h1 {
 }
 
 .banner .content .watch {
+  margin-left: 1px;
+  border-radius: 50px;
   height: 4vh;
 }
 
@@ -510,6 +513,8 @@ h1 {
 }
 
 .banner .content2 .tick {
+  margin-left: 1px;
+  border-radius: 50px;
   height: 4vh;
 }
 
@@ -628,14 +633,14 @@ h1 {
   position: absolute;
   height: 5vh;
   bottom: 0%;
-  left: 27.1%;
+  left: 27.9%;
 }
 
 #services .ds {
   background-color: purple;
   width: 38%;
   height: 84vh;
-  margin-right: 20px;
+  margin-right: 36px;
   color: white;
 }
 
@@ -683,14 +688,14 @@ h1 {
 #services .x {
   position: absolute;
   bottom: 0%;
-  left: 64.7%;
+  left: 62.3%;
 }
 
 #services .arrow2 {
   position: absolute;
   bottom: 0%;
   height: 5vh;
-  left: 94.2%;
+  left: 93.8%;
 }
 
 #services .media {
@@ -1022,11 +1027,11 @@ h1 {
     margin-left: 0px;
   }
   .banner .content {
-    margin-left: 72px;
+    margin-left: -46px;
     margin-top: 351px;
   }
   .banner .content2 {
-    margin-left: 72px;
+    margin-left: -46px;
   }
   .banner .buttons {
     left: -46px;
@@ -1778,7 +1783,7 @@ h1 {
 @media only screen and (min-width: 1399.98px) {
   .navigation .logo {
     position: absolute;
-    margin-left: -1078px;
+    margin-left: -1147px;
   }
   .navigation .link1 {
     position: absolute;
@@ -1814,6 +1819,9 @@ h1 {
   .banner .pics {
     margin-top: 86px;
   }
+  .banner p {
+    width: 385px;
+  }
   #Aboutus .button3 {
     margin-top: 6px;
     font-family: "jose", JosefinSans;
@@ -1837,15 +1845,18 @@ h1 {
   #Aboutus .sack {
     margin-left: 24px;
   }
+  #Aboutus .dancing {
+    position: relative;
+  }
   #services .x {
     position: absolute;
     bottom: 0%;
-    left: 63.5%;
+    left: 62.3%;
   }
   #services .arrow {
     position: absolute;
     bottom: 0%;
-    left: 28.8%;
+    left: 27.9%;
   }
   #services .arrow2 {
     position: absolute;
@@ -1856,7 +1867,7 @@ h1 {
     background-color: purple;
     width: 33%;
     height: 84vh;
-    margin-right: 20px;
+    margin-right: 36px;
     color: white;
   }
   #services .media {
@@ -1885,10 +1896,19 @@ h1 {
     margin-left: -47px;
     margin-top: 325px;
   }
+  .serve2 .bride {
+    margin-top: 26px;
+  }
+  .serve2 .bride .muroora {
+    position: relative;
+  }
   .serve2 .bride .right2 {
     margin-left: -47px;
     margin-top: 325px;
     position: absolute;
+  }
+  .serve2 .guyz .gentlemen {
+    position: relative;
   }
   .asseen .photogrid {
     margin-top: 37px;

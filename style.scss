@@ -1958,3 +1958,72 @@ height: 2vh;
     color: white;
 }
 }
+
+
+
+@media only screen and (min-width:1500px){
+
+    .navigation .logo {
+        position: absolute;
+        margin-left: -1307px;
+    }
+    #Aboutus .youtube {
+        top: 1186px;
+        left: 70%;
+        position: absolute;
+
+      
+    }
+    #Aboutus .sack {
+        margin-left: 8px;
+    }
+    #Aboutus .tutor {
+        margin-top: 117px;
+    }
+    #services .arrow2 {
+        position: absolute;
+        bottom: 0%;
+        left: 93.1%;
+    }
+    #services .x {
+        position: absolute;
+        bottom: 0%;
+        left: 60.5%;
+    }
+    #services .arrow {
+        position: absolute;
+        bottom: 0%;
+        left: 29.4%;
+    }
+    #services .clk {
+        font-size: 18px;
+        font-weight: bolder;
+        font-family: "jose", JosefinSans;
+        margin-left: 156px;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    .clients {
+        margin-bottom: -46px;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: "jose", JosefinSans;
+        margin-left: 161px;
+        margin-top: 91px;
+    }
+    .serve2 .bride {
+        margin-top: 45px;
+    }
+    .serve2 .guyz .right {
+        position: absolute;
+        margin-left: -47px;
+        margin-top: 395px;
+    }
+    .serve2 .bride .right2 {
+        margin-left: -47px;
+        margin-top: 396px;
+        position: absolute;
+    }
+
+}
+

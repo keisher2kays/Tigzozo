@@ -427,6 +427,7 @@ h1 {
 }
 
 .banner p {
+  width: 405px;
   font-size: 20px;
   font-weight: 700;
   font-family: "jose",JosefinSans;
@@ -625,7 +626,7 @@ h1 {
   font-family: "jose",JosefinSans;
   position: absolute;
   bottom: -0.9%;
-  left: 18%;
+  left: 14%;
   color: white;
 }
 
@@ -633,12 +634,12 @@ h1 {
   position: absolute;
   height: 5vh;
   bottom: 0%;
-  left: 27.9%;
+  left: 28.1%;
 }
 
 #services .ds {
   background-color: purple;
-  width: 38%;
+  width: 30%;
   height: 84vh;
   margin-right: 36px;
   color: white;
@@ -688,14 +689,14 @@ h1 {
 #services .x {
   position: absolute;
   bottom: 0%;
-  left: 62.3%;
+  left: 59.3%;
 }
 
 #services .arrow2 {
   position: absolute;
   bottom: 0%;
   height: 5vh;
-  left: 93.8%;
+  left: 90.9%;
 }
 
 #services .media {
@@ -703,7 +704,7 @@ h1 {
   font-size: 19px;
   font-family: "jose",JosefinSans;
   position: absolute;
-  bottom: -220.9%;
+  bottom: -0.9%;
   left: 76%;
   color: white;
 }
@@ -1343,6 +1344,7 @@ h1 {
     margin-left: 37px;
   }
   .banner .all p {
+    width: 200px;
     font-size: 13px;
   }
   .banner .all .p1 {
@@ -1608,7 +1610,7 @@ h1 {
     margin-top: -75px;
   }
   .banner .wordnbuttons p {
-    width: 172px;
+    width: 213px;
   }
   .banner .wordnbuttons .button1 {
     height: 3vh;
@@ -1859,7 +1861,7 @@ h1 {
   #services .x {
     position: absolute;
     bottom: 0%;
-    left: 61.7%;
+    left: 62.3%;
   }
   #services .arrow {
     position: absolute;
@@ -1927,7 +1929,25 @@ h1 {
   }
   .asseen .photogrid {
     margin-top: 37px;
-    margin-left: 90px;
+    margin-left: 145px;
+  }
+  .asseen .photogrid .r1 {
+    height: 45vh;
+  }
+  .asseen .photogrid .r2 {
+    height: 45vh;
+  }
+  .asseen .photogrid .r3 {
+    height: 45vh;
+  }
+  .asseen .photogrid .r4 {
+    height: 45vh;
+  }
+  .asseen .photogrid .r5 {
+    height: 45vh;
+  }
+  .asseen .photogrid .r6 {
+    height: 45vh;
   }
   .footer {
     height: 29vh;

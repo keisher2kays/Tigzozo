@@ -293,6 +293,7 @@ h1 {
         font-family: "jose",JosefinSans ;
     }
     p{
+        width: 405px;
         font-size: 20px;
         font-weight: 700;
         font-family: "jose",JosefinSans ;
@@ -463,18 +464,18 @@ h1 {
         font-family: "jose",JosefinSans ;
         position: absolute;
         bottom: -0.9%;
-        left: 18%;
+        left: 14%;
         color: white;
     }
     .arrow{
         position: absolute;
         height: 5vh;
         bottom: 0%;
-        left:27.9% ;
+        left:28.1% ;
     }
     .ds{
         background-color: purple;
-        width: 38%;
+        width: 30%;
         height: 84vh;
         margin-right: 36px;
         color: white;
@@ -520,21 +521,21 @@ h1 {
     .x{
         position: absolute;
         bottom: 0%;
-        left: 62.3%;
+        left: 59.3%;
 
     }
     .arrow2{
         position: absolute;
         bottom: 0%;
         height: 5vh;
-        left: 93.8%;
+        left: 90.9%;
     }
     .media{
         font-weight: bolder;
         font-size: 19px;
         font-family: "jose",JosefinSans ;
         position: absolute;
-        bottom: -220.9%;
+        bottom: -0.9%;
         left: 76%;
         color: white;
     }
@@ -1220,6 +1221,7 @@ margin-top: 27px;
                 margin-left: 37px;
             }
             p{
+                width: 200px;
                 font-size: 13px;
             }
             .p1{
@@ -1537,7 +1539,7 @@ height: 2vh;
              margin-top: -75px;
             }
       p{
-          width: 172px;
+          width: 213px;
       }
       .button1{
           height: 3vh;
@@ -1843,7 +1845,7 @@ height: 2vh;
         .x{
             position: absolute;
     bottom: 0%;
-    left: 61.7%;
+    left: 62.3%;
         }
         .arrow{
             position: absolute;
@@ -1926,7 +1928,27 @@ height: 2vh;
    .asseen{
     .photogrid{
         margin-top: 37px;
-        margin-left: 90px;
+        margin-left: 145px;
+
+        .r1{
+          height: 45vh;
+        }
+        .r2{
+            height: 45vh;
+          }
+          .r3{
+            height: 45vh;
+          }
+          .r4{
+            height: 45vh;
+          }
+          .r5{
+            height: 45vh;
+          }
+          .r6{
+            height: 45vh;
+          }
+                  
     }
    } 
    .footer {
